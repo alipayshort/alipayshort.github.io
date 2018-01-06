@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>支付宝红包短地址生成器</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.5, maximum-scale=1.5, user-scalable=yes" />
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/iosOverlay.css">
+</head>
+
+<body>
+  <div class="wrapper" id="wrap">
+    <div class="header"> </div>
+    <div class="content" id="content">
+      <div class="pos-header" id="top-float-bar">
+        <div class="part-one"></div>
+        <div class="part-two" id="card-tab-layer">
+          <div class="c-top" id="top-card-tab"></div>
+        </div>
+      </div>
+      <div class="logo">
+        <a title="支付宝短网址" href="javascript:void(0);">
+            <span></span>
+        </a>
+      </div>
+      <div class="shortener">
+        <form name="input" onsubmit="return false;">
+            <span class="sec-input-box">
+              <input type="text" class="sec-input active" name="url" id="url" value="https://qr.alipay.com/" autocomplete="off" onkeydown="if(event.keyCode==13){return false;}" />
+            </span>
+            <div class="shorturl">
+			         <input type="radio" name="radio" value="tb.am" checked="checked" style="display:none"/>
+			         <div style="margin-top:3px;margin-left:0px;text-align: left;position: absolute;"> </div>
+            </div>
+
+            <div style="margin-top:5px;margin-left:0px;text-align: left;">
+              <p id="errmsg"></p>
+            </div>
+
+            <span class="enter-input">
+              <input id="button" type="button" value="生成" onclick="javascript:makesurl()">
+            </span>
+       </form>
+       <p id="link"></p>
+      </div>
+      <div class="shortener">
+        <ol>
+          <li>打开支付宝赚赏金->选择二维码并截图</li>
+          <li>打开微信扫一扫识别二维码</li>
+          <li>微信提示：如需浏览，请长按网址复制后使用浏览器访问</li>
+          <li>将网页上的https://qr.alipay.com开头的网址复制粘贴上本页面</li>
+          <li>点击<a style="color:red" href="http://t.cn/RHBJ47j">打开支付宝</a>直达红包页面截屏</li>
+          <li>最后请记住本页面地址<span style="color:red">http://t.cn/RHBJWT2</span>请加入微信收藏</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="https://short.judiancloud.com/js/shorturl.js" type="text/javascript"></script>
+  <script src="https://short.judiancloud.com/js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://short.judiancloud.com/js/index.js" type="text/javascript"></script>
+  <script src="https://short.judiancloud.com/js/iosOverlay.js" type="text/javascript"></script>
+  <script src="https://short.judiancloud.com/js/spin.min.js" type="text/javascript" ></script>
+</html>
