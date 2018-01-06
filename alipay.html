@@ -21,7 +21,7 @@
 var alipayPath = GetQueryString("path");
 var fdStart = alipayPath.indexOf("https://qr.alipay.com");
 if (fdStart === 0) {
-  var host = "http://ali.judiancloud.com/";
+  var host = "https://ali.judiancloud.com/";
   var src = host + "alipay.php?path=" + alipayPath;
   var iframe = document.createElement('iframe');
   iframe.src=src;
